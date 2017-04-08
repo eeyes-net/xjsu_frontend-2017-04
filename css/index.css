@@ -1,0 +1,299 @@
+/* normalize */
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* common */
+
+.clearfix {
+    clear: both
+}
+
+.
+body {
+    min-width: 1200px;
+}
+
+/* nav */
+
+.nav {
+    position: relative;
+    margin: 0 auto;
+    height: 112px;
+}
+
+.nav-bg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 112px;
+}
+
+.nav-bg-tech {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    right: 0;
+    height: 32px;
+    background-color: #edf0ef;
+}
+
+.nav-bg-link {
+    position: absolute;
+    left: 50%;
+    top: 32px;
+    right: 0;
+    height: 80px;
+    background-color: #f7faf9;
+}
+
+.nav-container {
+    margin: 0 auto;
+    position: relative;
+    width: 1200px;
+}
+
+.nav-logo {
+    position: absolute;
+    padding: 28.5px 0;
+    left: 0;
+    top: 0;
+    width: 346px;
+    height: 112px;
+    box-sizing: border-box;
+}
+
+.nav-logo-image {
+    width: 281px;
+    height: 55px;
+}
+
+.nav-tech {
+    position: absolute;
+    left: 346px;
+    top: 0;
+    right: 0;
+    height: 32px;
+    background-color: #edf0ef;
+    text-align: right;
+}
+
+.nav-tech-span {
+    padding: 0 8px;
+    height: 100%;
+    color: #2d403b;
+    font-size: 12px;
+    line-height: 32px;
+    border-right: 1px solid #acbfba;
+}
+
+.nav-tech-span img {
+    vertical-align: middle;
+}
+
+.nav-link {
+    position: absolute;
+    left: 346px;
+    top: 32px;
+    right: 0;
+    height: 80px;
+    background-color: #f7faf9;
+    text-align: right;
+}
+
+.nav-link-li {
+    float: right;
+    margin-left: 24px;
+}
+
+.nav-link-li a {
+    display: block;
+    width: 96px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 16px;
+    text-align: center;
+    color: #2d403b;
+    box-sizing: border-box;
+}
+
+.nav-link-li a:hover {
+    text-shadow: 0 0 1px #2d403b;
+    border-bottom: 4px solid #29a687;
+}
+
+.nav-link-li a:active {
+    color: #fff;
+    background-color: #29a687;
+}
+
+/* carousel */
+
+.carousel {
+    position: relative;
+    margin-bottom: 108px;
+}
+
+.carousel-image-container {
+    height: 420px;
+    text-align: center;
+}
+
+.carousel-image {
+    height: 420px;
+    min-width: 1200px;
+}
+
+.carousel-image-li {
+    position: relative;
+}
+
+.carousel-image-button {
+    position: absolute;
+    top: 254px;
+    left: 50%;
+    margin-left: -96px;
+    width: 192px;
+    height: 50px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bolder;
+    box-sizing: border-box;
+    border: 4px solid #fff;
+    background-color: transparent;
+}
+
+.carousel-shift-button-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.carousel-shift-button-group {
+    position: relative;
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.carousel-shift-button {
+    position: absolute;
+    top: 180px;
+    width: 36px;
+    height: 36px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bolder;
+    box-sizing: border-box;
+    border: 4px solid #fff;
+    background-color: transparent;
+}
+
+.carousel-ordered-button {
+    width: 36px;
+    height: 36px;
+    color: #29a687;
+    font-size: 12px;
+    border: 4px solid #29a687;
+    box-sizing: border-box;
+    background-color: transparent;
+}
+
+.carousel-shift-button.pre {
+    left: 0;
+}
+
+.carousel-shift-button.next {
+    right: 0;
+}
+
+.carousel-ordered-button-group {
+    margin-top: 37px;
+    text-align: center;
+}
+
+.carousel-ordered-button-li {
+    display: inline-block;
+}
+
+.carousel-ordered-button {
+    width: 36px;
+    height: 36px;
+    font-size: 14px;
+    font-weight: bolder;
+    box-sizing: border-box;
+    border: 4px solid #29a687;
+}
+
+/* footer */
+
+footer {
+    padding: 72px 0 36px;
+    background-color: #f7faf9;
+}
+
+.footer-qrcode-container {
+    text-align: center;
+}
+
+.footer-qrcode-block {
+    display: inline-block;
+    width: 253px;
+}
+
+.footer-qrcode-title {
+    font-size: 12px;
+}
+
+.weixin .footer-qrcode-title {
+    color: #167f76;
+}
+
+.weibo .footer-qrcode-title {
+    color: #e31c34;
+}
+
+.footer-qrcode-image {
+    display: block;
+    margin: 24px auto 0;
+    width: 181px;
+    height: 181px;
+}
+
+.footer-copyright {
+    margin-top: 36px;
+    color: #2d403b;
+    font-size: 12px;
+    text-align: center;
+}
+
+.footer-copyright p {
+    margin-top: 23px;
+}
+
+.footer-copyright p strong {
+    font-weight: bold;
+}
+
+.footer-link {
+    margin-top: 24px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.footer-link a {
+    color: #6c8076;
+    margin: 0 8px;
+}
