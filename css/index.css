@@ -113,8 +113,14 @@ body {
     text-align: right;
 }
 
+.nav-link-ul {
+    font-size: 0;
+    text-align: right;
+}
+
 .nav-link-li {
-    float: right;
+    display: inline-block;
+    font-size: 16px;
     margin-left: 24px;
 }
 
@@ -130,7 +136,7 @@ body {
 }
 
 .nav-link-li a:hover {
-    text-shadow: 0 0 1px #2d403b;
+    text-shadow: 1px 1px 1px #2d403b;
     border-bottom: 4px solid #29a687;
 }
 
@@ -201,16 +207,6 @@ body {
     background-color: transparent;
 }
 
-.carousel-ordered-button {
-    width: 36px;
-    height: 36px;
-    color: #29a687;
-    font-size: 12px;
-    border: 4px solid #29a687;
-    box-sizing: border-box;
-    background-color: transparent;
-}
-
 .carousel-shift-button.pre {
     left: 0;
 }
@@ -221,16 +217,34 @@ body {
 
 .carousel-ordered-button-group {
     margin-top: 37px;
+}
+
+.carousel-ordered-button-ol {
+    font-size: 0;
     text-align: center;
 }
 
 .carousel-ordered-button-li {
     display: inline-block;
+    margin: 0 3px;
+    font-size: 14px;
 }
 
 .carousel-ordered-button {
     width: 36px;
     height: 36px;
+    color: #acbfba;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: bolder;
+    border: none;
+    box-sizing: border-box;
+}
+
+.carousel-ordered-button.active {
+    width: 36px;
+    height: 36px;
+    color: #26997c;
     font-size: 14px;
     font-weight: bolder;
     box-sizing: border-box;
