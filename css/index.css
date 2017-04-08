@@ -402,7 +402,7 @@ body {
     position: absolute;
     left: 24px;
     top: 36px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     line-height: 1;
 }
@@ -482,6 +482,102 @@ body {
     left: 36px;
     bottom: 24px;
     color: #acbfba;
+}
+
+/* about */
+
+.main-section.about .main-section-title-container {
+    position: relative;
+}
+
+.about-member-count {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.about-member-count-rect {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 48px;
+    height: 36px;
+    border: 6px solid #acbfba;
+    box-sizing: border-box;
+}
+
+.about-member-count-content {
+    position: absolute;
+    margin-top: -4px;
+    top: 0;
+    right: 60px;
+    width: 9em;
+    color: #acbfba;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: right;
+}
+
+.about-member-count-number {
+    color: #26997c;
+    font-weight: bold;
+}
+
+.about-block {
+    padding: 48px 0 64px;
+    background-color: #f7faf9;
+    margin-bottom: 36px;
+}
+
+.about-block:nth-last-child(1) {
+    margin-bottom: 0;
+}
+
+.about-title {
+    margin: 0 auto 36px;
+    width: 1168px;
+    color: #29a687;
+    font-weight: bolder;
+}
+
+.about-title::before {
+    content: '';
+    display: inline-block;
+    background-color: #29a687;
+    width: 4px;
+    height: 1em;
+    margin-right: 14px;
+    vertical-align: middle;
+}
+
+.about-title span {
+    vertical-align: middle;
+}
+
+.about-xjsu-introduce-body {
+    margin: 0 auto;
+    width: 1128px;
+}
+
+.about-xjsu-introduce-text {
+    text-indent: 2em;
+    max-height: 80px;
+}
+
+.about-xjsu-introduce-more {
+    position: relative;
+}
+
+.about-xjsu-introduce-more a {
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    margin-top: -20px;
+    height: 20px;
+    color: #acbfba;
+    background-color: #f7faf9;
+    font-size: 16px;
 }
 
 /* footer */
