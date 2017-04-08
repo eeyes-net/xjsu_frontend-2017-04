@@ -281,6 +281,7 @@ body {
     color: #26997c;
     border: 6px solid #26997c;
     box-sizing: border-box;
+    cursor: default;
 }
 
 .main-section-title:hover {
@@ -524,7 +525,7 @@ body {
 }
 
 .about-block {
-    padding: 48px 0 64px;
+    padding: 48px 0;
     background-color: #f7faf9;
     margin-bottom: 36px;
 }
@@ -537,6 +538,7 @@ body {
     margin: 0 auto 36px;
     width: 1168px;
     color: #29a687;
+    font-size: 24px;
     font-weight: bolder;
 }
 
@@ -551,11 +553,14 @@ body {
 }
 
 .about-title span {
+    line-height: 1;
     vertical-align: middle;
 }
 
+/* about xjsu introduce */
+
 .about-xjsu-introduce-body {
-    margin: 0 auto;
+    margin: 0 auto 12px;
     width: 1128px;
 }
 
@@ -578,6 +583,42 @@ body {
     color: #acbfba;
     background-color: #f7faf9;
     font-size: 16px;
+}
+
+/* about presidium */
+
+.about-presidium-body {
+    height: 463px;
+    /* TODO */
+}
+
+/* about department */
+
+.about-department-table {
+    margin: 0 auto;
+    width: 1144px;
+}
+
+.about-department-card {
+    margin: 0 auto;
+    padding: 14px 0 24px;
+    width: 88px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.about-department-image {
+    height: 56px;
+    max-width: 100%;
+}
+
+.about-department-name {
+    margin-top: 16px;
+    height: 1em;
+    color: #6c8076;
+    font-size: 16px;
+    line-height: 1;
+    overflow: hidden;
 }
 
 /* footer */
