@@ -710,10 +710,39 @@ body {
 }
 
 .service-tab {
+    display: none;
 }
 
-/* service apply */
+.service-tab.active {
+    display: block;
+}
 
+/* service link */
+.service-tab-link-container {
+    padding: 36px 0;
+    font-size: 0;
+}
+
+.service-tab-link {
+    display: inline-block;
+    padding: 0 36px;
+    width: 25%;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+.service-tab-link-content {
+    padding: 27px 0;
+}
+
+.service-tab-link-content:hover {
+    background-color: #fff;
+}
+
+.service-tab-link-text {
+    font-size: 18px;
+    text-align: center;
+}
 
 /* footer */
 
