@@ -703,7 +703,6 @@ body {
 
 .service-tab-container {
     position: relative;
-    min-height: 378px;
     color: #2d403b;
     border: 2px solid #29a687;
     box-sizing: border-box;
@@ -747,6 +746,32 @@ body {
     color: #2d403b;
     font-size: 18px;
     text-align: center;
+}
+
+.service-tab-more {
+    height: 0;
+    font-size: 16px;
+    text-align: center;
+}
+
+.service-tab-more-button {
+    background-color: transparent;
+    border: none;
+}
+
+.service-tab-more-button::before {
+    content: '';
+    display: block;
+    margin-bottom: -54px;
+    border: 54px solid transparent;
+    border-bottom: none;
+    border-top-color: #29a687;
+}
+
+.service-tab-more-text {
+    color: #fff;
+    padding: 6px 0 32px;
+    font-size: 16px;
 }
 
 /* service freshman */
