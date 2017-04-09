@@ -331,7 +331,7 @@ body {
 }
 
 .main-section-ordered-button-container {
-    padding: 14px 11px;
+    padding: 14px 9px;
     background-color: #edf0ef;
 }
 
@@ -439,12 +439,27 @@ body {
     background: url(../images/icon-visit-count.png) center;
 }
 
-.main-section-photo-card-info.visit-count {
+.main-section-photo-card-info.place::before {
+    width: 10px;
+    height: 14px;
+    background: url(../images/icon-place.png) center;
+}
+
+.main-section-photo-card-info-container > div {
     margin-left: 10px;
 }
 
+.main-section-photo-card-info-container > div:nth-child(1) {
+    margin-left: 0;
+}
+
 .main-section-photo-card-info-text {
+    display: inline-block;
+    height: 1em;
+    max-width: 16em;
+    line-height: 1;
     vertical-align: middle;
+    overflow: hidden;
 }
 
 /* news */
@@ -592,14 +607,14 @@ body {
     /* TODO */
 }
 
-/* about department */
+/* about minister */
 
-.about-department-table {
+.about-minister-table {
     margin: 0 auto;
     width: 1144px;
 }
 
-.about-department-card {
+.about-minister-card {
     margin: 0 auto;
     padding: 14px 0 24px;
     width: 88px;
@@ -607,12 +622,12 @@ body {
     text-align: center;
 }
 
-.about-department-image {
+.about-minister-image {
     height: 56px;
     max-width: 100%;
 }
 
-.about-department-name {
+.about-minister-name {
     margin-top: 16px;
     height: 1em;
     color: #6c8076;
