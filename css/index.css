@@ -160,16 +160,25 @@ body {
 }
 
 .carousel-image-container {
+    margin: 0 auto;
+    width: 1366px;
     height: 420px;
-    text-align: center;
+    overflow: hidden;
 }
 
 .carousel-image {
     height: 420px;
-    min-width: 1200px;
+    min-width: 1px;
+}
+
+.carousel-image-ul {
+    width: 9999px;
+    font-size: 0;
 }
 
 .carousel-image-li {
+    display: inline-block;
+    font-size: 12px;
     position: relative;
 }
 
