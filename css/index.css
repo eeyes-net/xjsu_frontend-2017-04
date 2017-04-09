@@ -705,6 +705,7 @@ body {
 .service-tab-container {
     position: relative;
     min-height: 378px;
+    color: #2d403b;
     border: 2px solid #29a687;
     box-sizing: border-box;
 }
@@ -725,10 +726,14 @@ body {
 
 .service-tab-link {
     display: inline-block;
-    padding: 0 36px;
     width: 25%;
     font-size: 18px;
     box-sizing: border-box;
+    border-left: 1px solid #edf0ef;
+}
+
+.service-tab-link:nth-child(4n+1) {
+    border-left: none;
 }
 
 .service-tab-link-content {
@@ -740,6 +745,7 @@ body {
 }
 
 .service-tab-link-text {
+    color: #2d403b;
     font-size: 18px;
     text-align: center;
 }
