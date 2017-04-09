@@ -462,6 +462,46 @@ body {
     overflow: hidden;
 }
 
+/* main section list */
+
+.main-section-list {
+    margin: 0 auto;
+    padding: 36px 0;
+    font-size: 0;
+}
+
+.main-section-list-block {
+    display: inline-block;
+    width: 50%;
+    padding: 0 36px 0 18px;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+
+.main-section-list-content {
+    position: relative;
+    padding: 29px 18px;
+    box-sizing: border-box;
+}
+
+.main-section-list-content:hover {
+    background-color: #fff;
+}
+
+.main-section-list-block:nth-child(n+3) .main-section-list-content {
+    border-top: 1px solid #edf0ef;
+}
+
+.main-section-list-title {
+    color: #2d403b;
+    font-weight: bold;
+}
+
+.main-section-list-info {
+    margin-top: 24px;
+    color: #acbfba;
+}
+
 /* news */
 
 .news-section-body {
@@ -473,31 +513,6 @@ body {
     padding: 36px 0;
     width: 1200px;
     font-size: 0;
-}
-
-.news-block {
-    position: relative;
-    display: inline-block;
-    width: 600px;
-    height: 108px;
-    padding: 36px 24px;
-    font-size: 12px;
-    box-sizing: border-box;
-}
-
-.news-title {
-    position: absolute;
-    left: 36px;
-    top: 24px;
-    color: #2d403b;
-    font-weight: bold;
-}
-
-.news-time {
-    position: absolute;
-    left: 36px;
-    bottom: 24px;
-    color: #acbfba;
 }
 
 /* about */
@@ -635,6 +650,70 @@ body {
     line-height: 1;
     overflow: hidden;
 }
+
+/* service */
+
+.service-section-body {
+    padding-bottom: 90px;
+    background-color: #f7faf9;
+}
+
+.service-container {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.service-tab-title-ul {
+    font-size: 0;
+}
+
+.service-tab-title-li {
+    position: relative;
+    display: inline-block;
+    padding: 24px 0;
+    width: 25%;
+    color: #fff;
+    background-color: #598076;
+    font-size: 22px;
+    box-sizing: border-box;
+    cursor: default;
+    text-align: center;
+}
+
+.service-tab-title-li:hover, .service-tab-title-li.active {
+    background-color: #29a687;
+}
+
+.service-tab-title-text {
+    font-size: 22px;
+}
+
+.service-tab-title-li.active::after {
+    content: '';
+    display: block;
+    position: absolute;
+    margin-left: -16px;
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 0;
+    border: 16px solid transparent;
+    border-bottom: none;
+    border-top-color: #29a687;
+}
+
+.service-tab-container {
+    position: relative;
+    min-height: 378px;
+    border: 2px solid #29a687;
+    box-sizing: border-box;
+}
+
+.service-tab {
+}
+
+/* service apply */
+
 
 /* footer */
 
