@@ -10,11 +10,6 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    color: #000;
-    text-decoration: underline;
-}
-
 button {
     cursor: pointer;
 }
@@ -749,6 +744,31 @@ body {
     font-size: 18px;
     text-align: center;
 }
+
+/* service freshman */
+.service-tab-freshman-list-title {
+    color: #2d403b;
+    font-size: 18px;
+}
+.service-tab-freshman-list-title::before {
+    content: '';
+    display: inline-block;
+    margin-right: 9px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #29a687;
+    vertical-align: middle;
+}
+.service-tab-freshman-list-title span {
+    vertical-align: middle;
+}
+.service-tab-freshman-list-info {
+    margin-top: 22px;
+    color: #acbfba;
+    font-size: 12px;
+}
+
 
 /* footer */
 
