@@ -402,26 +402,21 @@ body {
 }
 
 .main-section-photo-card-detail {
-    position: relative;
     padding: 36px 24px;
-    height: 124px;
     background-color: #fff;
     box-sizing: border-box;
 }
 
 .main-section-photo-card-title {
-    position: absolute;
-    left: 24px;
-    top: 36px;
+    height: 18px;
     font-size: 18px;
     font-weight: bold;
     line-height: 1;
 }
 
 .main-section-photo-card-info-container {
-    position: absolute;
-    left: 24px;
-    bottom: 36px;
+    height: 15px;
+    margin-top: 24px;
     color: #acbfba;
     font-size: 12px;
 }
@@ -503,8 +498,11 @@ body {
 }
 
 .main-section-list-title {
+    height: 20px;
     color: #2d403b;
+    font-size: 20px;
     font-weight: bold;
+    line-height: 1;
 }
 
 .main-section-list-info {
