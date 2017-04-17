@@ -1,0 +1,67 @@
+@keyframes flipInX {
+    from {
+        transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        opacity: 0;
+    }
+    to {
+        transform: perspective(400px) rotate3d(1, 0, 0, 0);
+        opacity: 1;
+    }
+}
+
+.flipInX {
+    animation: flipInX .2s;
+}
+
+@keyframes flipOutX {
+    from {
+        transform: perspective(400px) rotate3d(1, 0, 0, 0);
+        opacity: 1;
+    }
+    to {
+        transform: perspective(400px) rotate3d(1, 0, 0, -90deg);
+        opacity: 0;
+    }
+}
+
+.flipOutX {
+    animation: flipOutX .2s;
+}
+
+@keyframes slideRightInX {
+    from {
+        transform: translate(1366px, 0);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+.slideRightInX {
+    animation: slideRightInX .5s ease-out;
+}
+
+.slideRightOutX {
+    animation: slideRightInX .5s reverse ease-out;
+}
+
+@keyframes slideLeftOutX {
+    from {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+    to {
+        transform: translate(-1366px, 0);
+        opacity: 0;
+    }
+}
+
+.slideLeftOutX {
+    animation: slideLeftOutX .5s ease-in;
+}
+
+.slideLeftInX {
+    animation: slideLeftOutX .5s reverse ease-in;
+}
