@@ -1,4 +1,4 @@
-@keyframes flipInX {
+@keyframes flipDownInX {
     from {
         transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
         opacity: 0;
@@ -9,11 +9,15 @@
     }
 }
 
-.flipInX {
-    animation: flipInX .2s;
+.flipDownInX {
+    animation: flipDownInX .2s ease-out;
 }
 
-@keyframes flipOutX {
+.flipUpOutX {
+    animation: flipDownInX .2s ease-out reverse;
+}
+
+@keyframes flipDownOutX {
     from {
         transform: perspective(400px) rotate3d(1, 0, 0, 0);
         opacity: 1;
@@ -24,8 +28,12 @@
     }
 }
 
-.flipOutX {
-    animation: flipOutX .2s;
+.flipDownOutX {
+    animation: flipDownOutX .2s ease-out;
+}
+
+.flipUpInX {
+    animation: flipDownOutX .2s ease-out reverse;
 }
 
 @keyframes slideRightInX {

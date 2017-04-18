@@ -59,89 +59,32 @@ $(function () {
         $(href).addClass('active');
     });
 
-    var slideAnimate = function ($body, html, direction) {
-        $body.css('overflow', 'hidden');
-        var $old = $body.children().first();
-        var $new = $old.clone();
-        $new.html(html);
-        $new.css('margin-top', -$old.outerHeight());
-        $body.append($new);
-        switch (direction) {
-            case 'left':
-                $old.addClass('slideLeftOutX');
-                $new.addClass('slideRightInX');
-                break;
-            case 'right':
-                $old.addClass('slideRightOutX');
-                $new.addClass('slideLeftInX');
-                break;
-        }
-        setTimeout(function () {
-            $old.remove();
-            $new.removeClass('slideRightInX slideLeftInX');
-            $new.css('margin-top', '');
-        }, 500);
-    };
-    window.slideAnimate = slideAnimate;
 
-    var flipAnimate = function ($body, html, direction) {
-        var $old = $body.children().first();
-        var $new = $old.clone();
-        $new.html(html);
-        $new.css('margin-top', -$old.outerHeight());
-        $new.children().css('opacity', '0');
-        $body.append($new);
-        $old.children().each(function (i) {
-            var $this = $(this);
-            setTimeout(function () {
-                $this.addClass('flipOutX');
-                setTimeout(function () {
-                    $this.css('opacity', '0');
-                    $this.removeClass('flipOutX');
-                }, 200);
-            }, i * 50);
+    // Pjax翻页
+    var pjax = function ($body, url, animate, callback) {
+        $.get(url, function (html) {
+            animate($body, html, callback);
         });
-        $new.children().each(function (i) {
-            var $this = $(this);
-            setTimeout(function () {
-                $this.addClass('flipInX');
-                setTimeout(function () {
-                    $this.css('opacity', '');
-                    $this.removeClass('flipInX');
-                }, 200);
-            }, 200 + i * 50);
-        });
-        setTimeout(function () {
-            $old.remove();
-            $new.css('margin-top', '');
-        }, $new.children().length * 50 + 400);
     };
-    window.flipAnimate = flipAnimate;
 
     $('#push .main-section-shift-button.pre').on('click', function () {
         var a = $('#push .main-section-photo-card-container').html();
-        slideAnimate($('#push .main-section-body-photo-card'), a, 'right');
+        Animate.slideRight($('#push .main-section-body-photo-card'), a);
     });
 
     $('#push .main-section-shift-button.next').on('click', function () {
         var a = $('#push .main-section-photo-card-container').html();
-        slideAnimate($('#push .main-section-body-photo-card'), a, 'left');
+        Animate.slideLeft($('#push .main-section-body-photo-card'), a);
     });
 
     $('#news .main-section-shift-button.pre').on('click', function () {
-        var a = $('#news .news-container main-section-list').html();
-        flipAnimate($('#news .news-section-body'), a);
+        var a = $('#news .main-section-list:first-child').html();
+        Animate.flipUp($('#news .news-section-body'), a);
     });
 
     $('#news .main-section-shift-button.next').on('click', function () {
-        var a = $('#news .news-container main-section-list').html();
-        flipAnimate($('#news .news-section-body'), a);
+        // pjax($('#news .news-section-body'), './', Animate.flipDown);
+        var a = $('#news .main-section-list:first-child').html();
+        Animate.flipDown($('#news .news-section-body'), a);
     });
-
-    // Pjax翻页
-    var pjax = function (div, url, animate, callback) {
-        $.get(url, function (html) {
-            $(div).html(html);
-        });
-    }
 });
