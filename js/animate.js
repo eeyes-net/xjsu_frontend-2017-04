@@ -22,6 +22,8 @@ Animate.flip = function ($body, html, direction, callback) {
     var $newChildren = $new.children();
     $newChildren.css('opacity', '0');
     $body.append($new);
+    var h1 = $new.height();
+    $new.height($old.height());
     var animateIn = '', animateOut = '';
     switch (direction) {
         case 'down':
@@ -45,6 +47,13 @@ Animate.flip = function ($body, html, direction, callback) {
             }, i * Animate.const.flip.interval);
         })(i);
     }
+    setTimeout(function () {
+        $new.animate({
+            height: h1
+        }, Animate.const.flip.duration, function () {
+            $new.css('height', '');
+        });
+    }, Animate.const.flip.duration + $oldChildren.length * Animate.const.flip.interval);
     for (var i = 0; i < $newChildren.length; ++i) {
         (function (i) {
             var $newChildrenI = $($newChildren[i]);
